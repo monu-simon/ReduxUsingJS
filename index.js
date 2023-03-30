@@ -52,7 +52,7 @@ const combined = redux.combineReducers({
 })
 
 const store = redux.createStore(combined);
-console.log(store.get)
+
 const unsubscribe = store.subscribe(res => {
     console.log(store.getState());
 });
