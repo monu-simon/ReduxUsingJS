@@ -69,7 +69,7 @@ const fetchUsers = () => {
 }
 
 const store = redux.createStore(reducer,redux.applyMiddleware(thunkMiddleware));
-console.log(store.getState())
+
 store.subscribe(res => {
     console.log(store.getState())
 })
